@@ -1,0 +1,23 @@
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick=()=>{
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll =() => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
+
+
+const typed = new Typed('.multiple-text', {
+    strings: ['Push Limits. Build Legends', 'No Excuses. Just Results','Train Hard. Shine Strong','Strength Starts Here','Built by Effort, Forged in Steel lifting',],
+    typeSpeed: 60,
+    backspeed: 60,
+    backDelay: 1000,
+    loop:true,
+  });
+
+
